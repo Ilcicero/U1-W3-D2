@@ -61,7 +61,7 @@
 
       const changeTitle = (newTitle) => {
         let mainTitle = document.getElementById("main-title")
-        mainTitle.innerHTML = newTitle
+        mainTitle.innerText = newTitle
       }
       changeTitle("CAMBIO IL TITOLO ")
 
@@ -128,11 +128,11 @@
                      Scrivi una funzione che faccia scomparire la prima lista non ordinata
                   */
 
-      // const hideFirstUl = () => {
-      //   let hidelista = document.getElementById("firstList")
-      //   hidelista.style.display = "none"
-      // }
-      // hideFirstUl()
+      const hideFirstUl = () => {
+        let hidelista = document.getElementById("firstList")
+        hidelista.style.display = "none"
+      }
+      hideFirstUl()
       /* ESERCIZIO 8
                      Scrivi una funzione che renda verde il background di ogni lista non ordinata
                     */
