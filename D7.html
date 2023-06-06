@@ -132,6 +132,7 @@
         let hidelista = document.getElementById("firstList")
         hidelista.style.display = "none"
       }
+      // hide.lista.remove() alternativa
       hideFirstUl()
       /* ESERCIZIO 8
                      Scrivi una funzione che renda verde il background di ogni lista non ordinata
@@ -149,21 +150,27 @@
       /* ESERCIZIO 9
                      Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
                     */
-
-      const makeItClickable = () => {}
+      //NON MI FUNZIONA
+      // const makeItClickable = () => {
+      //   let h1 = document.querySelector("h1")
+      //   let currenTextValue = h1.innerText
+      //   currenTextValue = currenTextValue.slice(0, currenTextValue.length - 1)
+      // }
+      // let h1 = document.querySelector("h1")
+      // h1.onclick = makeItClickable
 
       /* ESERCIZIO 10
                      Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
                     */
 
       const revealFooterLink = () => {
-        let footer = document.querySelector("footer")
-        footer.addEventListener("click", () => {
-          let link = document.querySelector("footer a")
-          let url = link.getAttribute("href")
-          alert(url)
-        })
+        let footera = document.getElementsByTagName("a")[1]
+        let hrefvalue = footera.getAttribute
+        alert(hrefvalue)
       }
+
+      let footer = document.querySelector("footer")
+      footer.onclick = revealFooterLink
 
       revealFooterLink()
       /* ESERCIZIO 11
